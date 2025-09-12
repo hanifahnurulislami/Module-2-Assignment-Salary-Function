@@ -39,10 +39,10 @@ pip install prettytable
 2.  Run the code.
 
 The output will display a table containing:
-	•	Policyholder details
-	•	The products they own
-	•	Total premium
-	•	Payment status
+* Policyholder details
+* The products they own
+* Total premium
+* Payment status
 
 -----
 
