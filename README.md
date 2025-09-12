@@ -31,6 +31,7 @@ This project also requires the external library `prettytable` to display data in
 Install it using pip:
 ```bash
 pip install prettytable
+````
 
 ### 2\. Running the Code
 
