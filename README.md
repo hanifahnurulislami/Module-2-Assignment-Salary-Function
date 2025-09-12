@@ -48,6 +48,3 @@ Output dari kode akan menampilkan tabel yang berisi detail pemegang polis, produ
   * **Demonstrasi Fungsional**: Kode di `policy_management.ipynb` memberikan contoh nyata tentang bagaimana setiap metode dan objek berinteraksi untuk mencapai hasil yang diinginkan.
 
 <!-- end list -->
-
-```
-```
