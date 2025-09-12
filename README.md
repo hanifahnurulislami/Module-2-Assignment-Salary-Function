@@ -1,50 +1,55 @@
 # Milestone Assignment 1: Policy Management System for an Insurance Company
 
-## Deskripsi Proyek
-Proyek ini adalah sebuah sistem sederhana berbasis **Object-Oriented Programming (OOP)** yang dibangun menggunakan Python. Tujuannya adalah untuk mensimulasikan proses-proses dasar dalam sebuah perusahaan asuransi, seperti manajemen pemegang polis, produk asuransi, dan transaksi pembayaran.
+## Project Description
+This project is a simple **Object-Oriented Programming (OOP)**-based system built with Python.  
+Its purpose is to simulate basic processes in an insurance company, such as managing policyholders, insurance products, and payment transactions.
 
-Sistem ini terdiri dari beberapa kelas yang saling berinteraksi, mencakup fungsionalitas seperti:
-* Mendaftarkan dan mengelola pemegang polis.
-* Mendefinisikan dan memperbarui produk-produk asuransi.
-* Memproses pembayaran, mengirim pengingat, dan menerapkan penalti.
-* Mendemonstrasikan fungsionalitas sistem dengan contoh data.
-
----
-
-## Struktur Proyek
-Proyek ini dibagi menjadi beberapa file Python:
-
-* `policyholder.py`: Berisi kelas **`Policyholder`** untuk mengelola data dan status pemegang polis (mendaftar, menangguhkan, mengaktifkan kembali).
-* `product.py`: Berisi kelas **`Product`** untuk mendefinisikan produk asuransi dan metode untuk memperbarui atau menangguhkan produk.
-* `payment.py`: Berisi kelas **`Payment`** yang bertanggung jawab untuk mengelola transaksi pembayaran, termasuk memproses, mengirim pengingat, dan menerapkan penalti.
-* `policy_management.ipynb`: File Jupyter Notebook yang berfungsi sebagai *driver* utama. File ini mengimpor kelas-kelas di atas, membuat objek, dan mendemonstrasikan alur kerja sistem.
+The system consists of several interacting classes, covering functionalities such as:
+* Registering and managing policyholders.
+* Defining and updating insurance products.
+* Processing payments, sending reminders, and applying penalties.
+* Demonstrating the system’s functionality with sample data.
 
 ---
 
-## Cara Menjalankan Proyek
-Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal Anda.
+## Project Structure
+The project is divided into several Python files, each with a specific responsibility:
 
-### 1. Persyaratan
-Pastikan Anda sudah menginstal Python. Proyek ini juga memerlukan library eksternal `prettytable` untuk menampilkan data dalam format tabel.
+* `policyholder.py`: Contains the **`Policyholder`** class to manage policyholder data and status (register, suspend, reactivate).
+* `product.py`: Contains the **`Product`** class to define insurance products and methods to update or suspend products.
+* `payment.py`: Contains the **`Payment`** class, responsible for handling payment transactions, including processing, sending reminders, and applying penalties.
+* `policy_management.ipynb`: A Jupyter Notebook that acts as the main *driver*. It imports the classes above, creates objects, and demonstrates the system workflow.
 
-Anda bisa menginstalnya menggunakan pip:
+---
+
+## How to Run the Project
+
+### 1. Requirements
+Make sure you have Python installed.  
+This project also requires the external library `prettytable` to display data in a tabular format.
+
+Install it using pip:
 ```bash
 pip install prettytable
-````
 
-### 2\. Menjalankan Kode
+### 2\. Running the Code
 
-1.  Buka file `policy_management.ipynb` menggunakan Jupyter Notebook atau JupyterLab.
-2.  Jalankan setiap sel kode secara berurutan, dari atas ke bawah.
+1.  Open the `policy_management.ipynb` file using Jupyter Notebook.
+2.  Run the code.
 
-Output dari kode akan menampilkan tabel yang berisi detail pemegang polis, produk yang mereka miliki, dan status pembayaran mereka.
+The output will display a table containing:
+	•	Policyholder details
+	•	The products they own
+	•	Total premium
+	•	Payment status
 
 -----
 
-## Fitur-Fitur Utama
+## Key Features
 
-  * **Kelas Terpisah**: Setiap entitas utama (Policyholder, Product, Payment) diwakili oleh kelasnya sendiri, yang mempromosikan modularitas dan keterbacaan kode.
-  * **Enkapsulasi**: Atribut objek (misalnya, `name`, `amount`, `status`) dikelola melalui metode yang ada di dalam kelasnya, seperti `process_payment()` atau `suspend()`, yang menunjukkan prinsip enkapsulasi.
-  * **Demonstrasi Fungsional**: Kode di `policy_management.ipynb` memberikan contoh nyata tentang bagaimana setiap metode dan objek berinteraksi untuk mencapai hasil yang diinginkan.
+  * **Separate Classes**: Each main entity (Policyholder, Product, Payment) is represented by its own class, promoting modularity and readability.
+  * **Encapsulation**: Object attributes (e.g., `name`, `amount`, `status`) re managed through class methods such as `process_payment()` or `suspend()`, demonstrating the principle of encapsulation.
+  * **Functional Demonstration**: The code in `policy_management.ipynb` provides a practical example of how methods and objects interact to achieve the desired results.
 
 <!-- end list -->
+
